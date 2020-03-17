@@ -1,0 +1,15 @@
+.input {
+  border: 2px solid #8f1313;
+  border-radius: .3em;
+  padding: .25rem;
+  width: 7em;
+}
+
+select {
+  margin: .5rem;
+}
+
+.equals {
+  font-weight: bolder;
+  font-size: 2rem;
+}
