@@ -2,13 +2,19 @@ import React from 'react';
 import './styles.css';
 
 export default function CurrencyRow(props) {
-  const { currencyOptions } = props
+  const {
+    currencyOptions,
+    selectedCurrency,
+    onChangeCurrency,
+    onChangeAmount,
+    amount
+   } = props
   return (
     <div>
-      <input type="number" className="input" id=""/>
-      <select name="" id="">
+      <input type="number" className="input" value={amount} onChange={onChangeAmount}/>
+      <select value={selectedCurrency} onChange={onChangeCurrency}>
         {currencyOptions.map( option => (
-          <option value={option}>{option}</option>
+          <option key={option} value={option}>{option}</option>
         ))}
       </select>
     </div>
